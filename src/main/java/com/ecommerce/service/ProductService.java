@@ -36,7 +36,6 @@ public class ProductService {
 
     public Optional<Product> get(Long id) {
         Optional<Product> product = repository.findById(id);
-        System.out.println(product.get().getCategory());
         return product;
     }
 
